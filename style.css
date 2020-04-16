@@ -1,0 +1,68 @@
+.screensize{
+    height: 100vh; 
+     width: 100% !important;
+    background-image: url(./images/atronomy.jpg);
+    position: absolute;
+    top:2.5vh;
+    left:2.5vw;
+     z-index: -99;
+    overflow: hidden;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    border-width: 0px ;
+    overflow: hidden;
+    flex-flow: wrap;
+ }
+.icon{
+    width: 45vw;
+    height: 30vh;
+    background-image: url(./images/NVcrest.png);
+    background-size: contain;
+    position: absolute;
+    left: 20%;
+    top: 2%;
+    background-repeat: no-repeat;
+}
+
+ .Start{
+ display: inline-flex;
+   width: 100%;
+    height: 25vh;
+    background-color: khaki;
+} 
+
+
+.achievements{
+ 
+background-color: blue;
+bottom: 0%;
+  height: 75vh;
+}
+
+.host{
+ bottom: 0%;
+  height: 75vh;   
+background-color: red;
+} 
+.highScore{
+   
+    bottom: 0%;
+    height: 75vh;  
+
+    background-color: slategray;
+} 
+
+
+
+.host1{
+height: 45%;
+position: relative;
+top: 25%;
+left: 20%;
+}
+
+
+
+
+
