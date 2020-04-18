@@ -14,54 +14,84 @@
     overflow: hidden;
     flex-flow: wrap;
  }
-.icon{
+.crest{
     width: 45vw;
     height: 30vh;
     background-image: url(./images/NVcrest.png);
     background-size: contain;
     position: absolute;
-    left: 20%;
+    left: 5vw;
     top: 2%;
     background-repeat: no-repeat;
 }
 
  .Start{
- display: inline-flex;
+ 
    width: 100%;
     height: 25vh;
-    background-color: khaki;
+   
 } 
 
 
-.achievements{
- 
-background-color: blue;
-bottom: 0%;
-  height: 75vh;
-}
 
 .host{
  bottom: 0%;
   height: 75vh;   
-background-color: red;
+display: block;
 } 
-.highScore{
-   
+#display{
+   display: block ;
     bottom: 0%;
     height: 75vh;  
-
-    background-color: slategray;
+    overflow: hidden;
+  
 } 
 
 
 
 .host1{
-height: 45%;
+height: 75%;
 position: relative;
-top: 25%;
-left: 20%;
+bottom: 15%;
+right: -30%;
+}
+h1{
+  text-align: center;
+  font-size: 5vw;
+}
+h2{
+  text-align: center;
+  font-size: 5vw;
 }
 
+
+.crawl{
+  text-align: justify;
+  margin: 0 auto;
+  padding: 10xp;
+  width: 45vw;
+  line-height: 2.5;
+  /* transform:perspective(400px) rotateX(20deg); */
+  animation: crawl 90s linear;
+  color: beige;
+  font-size: 3vw;
+  font-weight: bolder;
+  
+  }
+  
+  
+  
+  
+  @keyframes crawl {
+    0% {
+      transform: translateY(100px) ;
+    
+    }
+   
+    100% { 
+      transform:  translateY(-4000px);
+    }
+  }
 
 
 
