@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="./style.css">
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script defer src="./script.js"></script>
@@ -20,22 +20,44 @@
         <div class="row">
             <div class="col s7" id="display">
                <div class="crawl">
-                      
+                <div class= "content">
                         <h1>NerdVerse</h1>
                         
                       
                       
-                      <p>It is a period of multiversal chaos. An ancient device which once brought order to our multiverse. A grand portal through time, space, and all other dimensions. Allowing life to spread out and take seed throughout the multiverse. Has been reactivated by an unknown force. Now instead of spreading life it spreads evil.....                                                                  </p>
+                      <p>It is a period of multiversal chaos. An ancient device which once brought order to our multiverse. A grand portal through time, space, and all other dimensions. Allowing life to spread out and take seed throughout the multiverse. Has been reactivated by an unknown force. Now instead of spreading life it spreads evil.....</p>
                         
                         <p>Evil fractions from many planets, galaxies and many other dark chasms, have joined forces. A force which seems to be unstopable, but yet isn't.</p>
                   
                       <p>For there is the powerful order of</p> 
                            <h2>Never Ending  Radical Dudes</h2> <p> Never, fear for N.E.R.D. shall prevail, For this multiverse is the great  NERDVERSE. Are you radical enough for our ranks, enlist and enbrace the power of the radical geek.....</p>
-                    </div>
+                    </div></div>
                   
             </div>
-            <div class="col s5 host">
+            <div class="col s5 host"> 
+            <div class="bubble container">
+                
+                <!-- divs for host dialog -->
+                <div id="speech1">Welcome to the Nerdverse Junction!!!  </div>
+                
+                <div id="speech2">May I ask your name?</div>
+                <div id="speech3"></div>
+                <div id="speech4"></div>
+
+
+                <div class="row askName">
+                    <div class="input-group nameBar">
+                        <input type="text" class=" name" >
+                        <span class="input-group-btn">
+                          <button class="btn btn-small" type="button">Go!</button>
+                        </span>
+                      </div><!-- /input-group -->
+                </div>
+            </div>
+            <div id="speech5">Return players look for name on list </div>
+        </div>
             <img src="./images/c3-po.png" class="host1">
+   
         </div>
         </div> 
     <!-- screensize div closure -->
