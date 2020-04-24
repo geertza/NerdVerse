@@ -49,7 +49,6 @@
 #crest {
     height: 24vh;
     -webkit-filter: drop-shadow(4px 3px 5px gold);
-    /* filter: drop-shadow(1px 1px 1px gold); */
     }
 
 .head3 {
@@ -73,8 +72,14 @@
             /* Main Content section------------------ */
  .display{
      height: 100%;
-    
-     overflow: hidden;
+    overflow: hidden;
+ }
+
+ #policeBox{
+     height: 100%;
+     width: auto;
+     position: relative;
+     left: 20%;
  }
  h1{
     text-align: center;
@@ -104,7 +109,6 @@
   
   .content{
        box-shadow: 6px 15px 6px 15px #e2d9bc;
-   
       opacity: .9;
       position: absolute;
       top: 50%;
@@ -170,7 +174,14 @@
     background-repeat: no-repeat;
 }
 
-
+.startGame{
+    width:auto;
+    height: auto;
+    font-size: 2.2vw;
+    border-radius: 15px;
+    background-color: #003b6f;
+    color: black;
+}
  .bottomBar{
      height: 60%;
      width: 100%;
@@ -188,6 +199,13 @@
     position: relative;
     top:0%;
     left: 30%;
+  }
+  .host2{
+      height: 150%;
+      position: relative;
+      top: -20%;
+      left: 20%;
+      display: none;
   }
 
   /* off main screen______--------------- */
