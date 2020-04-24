@@ -3,66 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="./style.css">
-    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+		  
     <script defer src="./script.js"></script>
-    <title>The Great Nerdverse</title>
+    <title>N.V.</title>
 </head>
 <body>
-    <div class="screensize ">
-        <div class="crest"></div>
-    <div class="Start  row">
-        <h2></h2>
-    
-    </div>
-        <div class="row">
-            <div class="col s7" id="display">
-               <div class="crawl">
-                <div class= "content">
-                        <h1>NerdVerse</h1>
-                        
-                      
-                      
-                      <p>It is a period of multiversal chaos. An ancient device which once brought order to our multiverse. A grand portal through time, space, and all other dimensions. Allowing life to spread out and take seed throughout the multiverse. Has been reactivated by an unknown force. Now instead of spreading life it spreads evil.....</p>
-                        
-                        <p>Evil fractions from many planets, galaxies and many other dark chasms, have joined forces. A force which seems to be unstopable, but yet isn't.</p>
-                  
-                      <p>For there is the powerful order of</p> 
-                           <h2>Never Ending  Radical Dudes</h2> <p> Never, fear for N.E.R.D. shall prevail, For this multiverse is the great  NERDVERSE. Are you radical enough for our ranks, enlist and enbrace the power of the radical geek.....</p>
-                    </div></div>
-                  
+    <!-- Keeps screen from scrolling -->
+    <div class="screenSize row">
+        <!-- Row for timer scroe options.. display bar -->
+        <div class="header row">
+            <div class="head1 col-4">
+                <button type="button" class="btn  btn-lg" id="options" data-toggle="modal" data-target="#myModal">Options</button>
             </div>
-            <div class="col s5 host"> 
-            <div class="bubble container">
-                
-                <!-- divs for host dialog -->
-                <div id="speech1">Welcome to the Nerdverse Junction!!!  </div>
-                
-                <div id="speech2">May I ask your name?</div>
-                <div id="speech3"></div>
-                <div id="speech4"></div>
+            <div class="head2 col-4 overflow-visible">
+                    <img src="./images/NVcrest.png" id="crest">
+            </div>
+            <div class="head3 col-4"></div>
+        </div>
+        
+        
+        <div class="main row">
+            
+            <!-- main content--------------------------- -->
+            <div class="display col-7">
+                <div class="crawl">
+                    <div class= "content">
+                <h1>NerdVerse</h1>
+                    <p>It is a period of multiversal chaos. An ancient device which once brought order to our multiverse. A grand portal through time, space, and all other dimensions. Allowing life to spread out and take seed throughout the multiverse. Has been reactivated by an unknown force. Now instead of spreading life it spreads evil.....</p>
+                  
+                  <p>Evil fractions from many planets, galaxies and many other dark chasms, have joined forces. A force which seems to be unstopable, but yet isn't.</p>
+            
+                <p>For there is the powerful order of</p> 
+                     <h2>Never Ending  Radical Dudes</h2> 
+                <p> Never, fear for N.E.R.D. shall prevail, For this multiverse is the great  NERDVERSE. Are you radical enough for our ranks, enlist and enbrace the power of the radical geek.....</p>
+             
+                </div> </div> </div>
+           
+           
+           <!-- sideBAr content------------------------- -->
+            <div class="sideBar col-5">
+                <div class="topBar row">
+                    <div class="bubble">
+                        
+                        <!-- divs for host dialog -->
+                        <p id="speech1" class="talk" >Welcome to the Nerdverse Junction!!!  </p>
+                        <p id="speech2" class="talk">May I ask your name?</p>
+                        <p id="speech3" class="talk"></p>
+                        <p id="speech4" class="talk"></p>
+                        <div class="askName">
+                            <div class="btn-group flex-container" role="group" aria-label="Basic example">
+                                <div><input type="text" class="form-control name" placeholder="Player Name" id="textName" ></div> 
+                                
+                                <button type="button" class="btn add-player"></button>
+                        
+                              </div>
+                        
+                    </div>
+                    <p id="speech5" class="talk"></p>
+                </div>
 
 
-                <div class="row askName">
-                    <div class="input-group nameBar">
-                        <input type="text" class=" name" >
-                        <span class="input-group-btn">
-                          <button class="btn btn-small" type="button">Go!</button>
-                        </span>
-                      </div><!-- /input-group -->
+                </div>
+                <div class="bottomBar row">
+                    <div class="speaker">
+                        <img src="./images/c3-po.png" class="host1">
+                        </div>
                 </div>
             </div>
-            <div id="speech5">Return players look for name on list </div>
-        </div>
-            <img src="./images/c3-po.png" class="host1">
-   
-        </div>
-        </div> 
-    <!-- screensize div closure -->
-    </div>
-    
-</body>
+       
 
+    </div> </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content--------------------------->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Sound Options</h4>
+            </div>
+            <div class="modal-body">
+              <div class="checkbox">
+                  <label>
+                    <input type="checkbox" data-toggle="toggle">
+                    Sound FX
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"  data-toggle="toggle">
+                    Music
+                  </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+</body>
 </html>

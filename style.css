@@ -1,171 +1,197 @@
-.screensize{
-    height: 100vh; 
-     width: 100% !important;
-    background-image: url(./images/atronomy.jpg);
+.screenSize{
+    height: 100vh !important; 
+     width: 100vw !important;
+    background-image: url(./images/stars.jpg);
     position: absolute;
-    top:2.5vh;
-    left:2.5vw;
-     z-index: -99;
-    overflow: hidden;
-    background-size: cover;
+    z-index: -99;
+    background-size: 100% 100%;
     padding: 0px;
     margin: 0px;
     border-width: 0px ;
     overflow: hidden;
-    flex-flow: wrap;
  }
-.crest{
-    width: 45vw;
-    height: 30vh;
+
+            /* header section----------------- */
+ .header{
+     width: 100%;
+     height: 15vh;
+     overflow: visible !important;
+     position: absolute;
+     top: 0%;
+     z-index: 6;
+ }
+ .head1 {
+    overflow: visible;
+ }
+ #options{
+     background-color: #43464B;
+     color: #e2d9bc;
+     width:auto;
+     height: auto;
+     font-size: 1.5vw;
+     box-shadow: 2px 5px 6px 4px#e2d9bc;
+ }
+ 
+ .head2 {
+  
+   overflow: visible !important;
+}
+/* .crest{
     background-image: url(./images/NVcrest.png);
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    
+    height: 24vh;
+    overflow: visible !important;
+    z-index: 9;
+} */
+
+#crest {
+    height: 24vh;
+    -webkit-filter: drop-shadow(4px 3px 5px gold);
+    /* filter: drop-shadow(1px 1px 1px gold); */
+    }
+
+.head3 {
+   overflow: visible;
+}
+
+ 
+ 
+ 
+ 
+ 
+ 
+                /* simple div row nothing directly in here */
+ .main{
+     width: 100%;
+     height: 75vh;
+     position: absolute;
+     bottom: 0%;
+ }
+
+            /* Main Content section------------------ */
+ .display{
+     height: 100%;
+    
+     overflow: hidden;
+ }
+ h1{
+    text-align: center;
+    font-size: 8vw;
+  }
+  h2{
+    text-align: center;
+    font-size: 8vw;
+  }
+  
+  
+  .crawl{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10xp;
+    width: 100%;
+    height: 100%;
+    
+    line-height: 1.5;
+    transform-origin: 50% 100%;
+   transform: perspective(500px) rotateX(25deg);
+    color:#ebecf0;
+    font-size: 4vw;
+    font-family: custom1;
+    
+    }
+  
+  .content{
+       box-shadow: 6px 15px 6px 15px #e2d9bc;
+   
+      opacity: .9;
+      position: absolute;
+      top: 50%;
+      animation: crawl 90s linear  infinite; background-image: url(./images/steel.png);opacity: .9;background-repeat: no-repeat; background-size: cover;
+  }
+   
+    
+    
+    
+    @keyframes crawl {
+      0% { top: 100%; }
+     
+      100% { top: -1000%; }
+      }
+      @font-face {
+        font-family: custom1;
+        src: url(./fonts/MyGirlIsRetro-0Grz.ttf);
+      }
+
+
+
+            /* Side Bar section------------------ */
+ .sideBar{
+     height: 100%;
+     
+ }
+ .topBar{
+     height: 40%;
+     width: 100%;
+     position: relative;
+     top: 0%;
+    
+ }
+ .bubble {
     position: absolute;
-    left: 10%;
-    top: 2%;
+    bottom: 10%;
+    right: 5%;
+    background-color: #43464B ;
+    color: #e2d9bc;
+    font: Arial  bold;
+    font-size: 2.2vw;
+    line-height: 1.25;
+    box-shadow: 2px 5px 6px 10px #e2d9bc;
+    text-align: center;
+    width: 40vw;
+    height: auto;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+#textName{
+    
+    background-color: lightgray;
+    height: 3vw;
+    width: 20vw;
+}
+.add-player{
+    background-color: lightgray;
+    border-radius: 30px;
+    height: 3vw;
+    width: 4vw;
+    background-image: url(./images/iconAddperson.png);
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
- .Start{
- 
-   width: 100%;
-    height: 25vh;
-   
-} 
 
-
-
-.host{
- bottom: 0%;
-  height: 75vh;   
-display: block;
-} 
-#display{
-   display: block ;
-    bottom: 0%;
-    height: 80vh;  
-    overflow: hidden;
-  
-} 
-
-
-
-.host1{
-height: 70%;
-position: absolute;
-bottom: -20%;
-right: 20%;
-}
-h1{
-  text-align: center;
-  font-size: 8vw;
-}
-h2{
-  text-align: center;
-  font-size: 8vw;
-}
-
-
-.crawl{
-  text-align: center;
-  margin: 0 auto;
-  padding: 10xp;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  line-height: 1.5;
-  transform-origin: 50% 100%;
-  transform: perspective(300px) rotateX(15deg);
- 
-  
-  color:#ebecf0;
-  font-size: 4vw;
-  
-  font-family: custom1;
-  }
-
-.content
-{
-	position: absolute;
-	top: 50%;
-	animation: crawl 90s linear  infinite; background-image: url(./images/steel.png);opacity: .9;background-repeat: no-repeat; background-size: cover;
-}
- 
-  
-  
-  
-  @keyframes crawl {
-    0% { top: 50%; }
-   
-    100% { top: -1000%; }
-    }
-
-    @font-face {
-      font-family: custom1;
-      src: url(./fonts/MyGirlIsRetro-0Grz.ttf);
-    }
-  
-    
-    .bubble {
-        position: absolute;
-        top: -30%;
-        right: 5%;
-        background-color: #43464B ;
-        font: Arial  bold;
-        font-size: 2vw;
-        line-height: 1.25;
-        box-shadow: 2px 5px 6px 10px rgba(163, 163, 163, 0.62);
-        text-align: center;
-        width: 45vw;
-        height: auto;
-        border-radius: 10px;
-        padding: 0px;
-        overflow: hidden;
-    }
-  .row{
-    width: 100%;
-  }
-  .name{
-    width: 50%;
-    color: white;
-    background-color: dimgrey;
-    
-  }
-   .nameBar{
+ .bottomBar{
+     height: 60%;
+     width: 100%;
      position: relative;
-    left:20%
-   }
-   
-   
-    @media only screen and (max-width: 500px) {
-      .host1{
-        right:-30%;
-        bottom: -40%;
-      }
-      .crest{
-        height: 30vw;
-      }
-      
-      .bubble {
-        font-size: 4vw;
-        bottom: 60%;
-        width: 55vw;
-      }
-      .crawl{
-        overflow: visible;
-        
-      bottom: 0%;
-      }
-
-      .display{
-        width: 120%;
-      }
-      /* .submitName{
-        width: 10vw;
-        height: 10vw;
-      } */
-    }
-
+     bottom: 0%;
     
-      
-    
+ }
+ .speaker{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+ }
+ .host1{
+    height: 220%;
+    position: relative;
+    top:0%;
+    left: 30%;
+  }
 
+  /* off main screen______--------------- */
+ .model-content{
+	height: auto;
+	width: 30vw;
+}
