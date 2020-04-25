@@ -257,7 +257,7 @@ p3, p4{
 	width: 30vw;
 }
         /* game-------------------------------------------------------------------------------- */
-        .game{
+        .Game{
             display: none;
         }
     /* display------------- */
@@ -296,4 +296,18 @@ p3, p4{
      text-align: center;
     
  }
-
+.highScore{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 30px;
+        font-size: 5vw;
+        width: 60vw;
+        height: auto;
+        display: none;
+        position: absolute;
+        right: -25%;
+        top: -20%;
+        color: #e2d9bc;
+}

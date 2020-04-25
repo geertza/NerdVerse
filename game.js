@@ -11,12 +11,11 @@ let shuffledQ
 
 // start game---------------
         // Simplify later--------
-$(".startGame").click(startGame())
-function startGame(){
+$(".startGame").click(function(){
     $(".open").hide(); $(".Game").css('display','block');
     shuffledQ = questions.sort(() => Math.random() - .5)
   setTable() 
- }
+ })
 
  function setTable() {
     showQuestion(shuffledQ[currentQ])
@@ -38,20 +37,12 @@ function showQuestion(question){
   $('p4').text(score)
   if  (time <= 0 || currentQ >= "10") {
   clearInterval(chrono);    
-  highScoreSet();
-   $(".Game").hide()
-   alert("game over")
+   $(".Game").hide();
+   $("#crest").hide();
+   highScoreSet();
  }else{
    time--;
-  
- }
-}
-
-  
-
-
-
-
+  }}
 //  answer Selector function
   $(".answer").click(function() {
     var x = $(this).val();
@@ -60,15 +51,13 @@ function showQuestion(question){
     if (rightAnswer==x) {
       score++
       currentQ++
-      
-    //  right.play()
+      right.play()
        setTable()
-      
-    }
+      }
     else {
       currentQ++
       setTable()
-      // wrong.play()
+      wrong.play()
       time -= 10
     }})
 
@@ -78,7 +67,24 @@ function showQuestion(question){
       highScore.sort((a,b) => b.finalScore - a.finalScore)
     highScore.splice(5)
     localStorage.setItem("highScoreList",JSON.stringify(highScore));
-    console.log(highScore)
-    
+    final()
     }
     
+
+    function final(){
+      $(".screenSize").css({"background-color": "black"})
+      $(".display").css({ "background-image": "url('./images/NVcrest.png')","-webkit-filter":"drop-shadow(4px 3px 5px gold)",
+    "background-size":"contain","background-repeat":"no-repeat","background-image-Position":"right right"})
+      $(".highScore").show()
+    for (i = 0; i < highScore.length; i++) {
+      let newDiv= document.createElement("div")
+          newDiv.innerHTML=highScore[i].name+"  "+"  "+"  "+" "+highScore[i].finalScore;
+          $(".highScore").append(newDiv)}
+          setTimeout(restart,10000)
+    
+    }
+
+
+    function restart(){
+      location.reload();
+    }

@@ -27,16 +27,16 @@ let playerName="andy"
 
 
  function tardis(){
-     $(".display").prepend('<img id="policeBox" src="./images/tardis.png" >')
+     $(".display").prepend('<img id="policeBox" class="open" src="./images/tardis.png" >')
      x= document.getElementById("tardisAudio")
     x.play()
-     setTimeout(hesHere,200)  
+     setTimeout(hesHere,2500)  
     }
 
 function hesHere(){
     $(".talk").empty()
     $("#speech1").text("Finally he is here!")
-    setTimeout(getin,200)
+    setTimeout(getin,2500)
 }
 
 function getin(){
