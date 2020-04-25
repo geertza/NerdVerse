@@ -13,7 +13,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 		  
-    <script defer src="./script.js"></script>
+    <script defer src="./intro.js"></script>
+    <script defer src="./questions.js"></script>
+    <script defer src="./game.js"></script>
     <title>N.V.</title>
 </head>
 <body>
@@ -27,7 +29,10 @@
             <div class="head2 col-4 overflow-visible">
                     <img src="./images/NVcrest.png" id="crest">
             </div>
-            <div class="head3 col-4"></div>
+            <div class="head3 col-4">
+                      
+
+            </div>
         </div>
         
         
@@ -37,7 +42,7 @@
             <div class="display col-7">
               
               
-              <div class="crawl">
+              <div class="crawl open">
                     <div class= "content">
                 <h1>NerdVerse</h1>
                     <p>It is a period of multiversal chaos. An ancient device which once brought order to our multiverse. A grand portal through time, space, and all other dimensions. Allowing life to spread out and take seed throughout the multiverse. Has been reactivated by an unknown force. Now instead of spreading life it spreads evil.....</p>
@@ -48,38 +53,50 @@
                      <h2>Never Ending  Radical Dudes</h2> 
                 <p> Never, fear for N.E.R.D. shall prevail, For this multiverse is the great  NERDVERSE. Are you radical enough for our ranks, enlist and enbrace the power of the radical geek.....</p>
              
-                </div> </div> </div>
+                </div> </div>
+                <div class="getIn">
+                 <button type="submit" class="startGame" >Get in the wierd guy's box</button>
+                  </div>
+                <div class="questions">
+                  <h6>when will I be Done?</h6>
+                  <div class="answerGrid">
+                    <button class="answer A" value="a">A</button>
+                    <button class="answer B" value="b">B</button>
+                    <button class="answer C" value="c">C</button>
+                    <button class="answer D" value="d">D</button>
+                  </div></div>
+              </div>
            
            
            <!-- sideBAr content------------------------- -->
             <div class="sideBar col-5">
                 <div class="topBar row">
-                    <div class="bubble">
+                    <div class="bubble open">
                         
                         <!-- divs for host dialog -->
+                          <h3>For best results turn your device sideways for widescreen..</h3>
                         <p id="speech1" class="talk" >Welcome to the Nerdverse Junction!!!  </p>
-                        <p id="speech2" class="talk">May I ask your name?</p>
-                        <p id="speech3" class="talk"></p>
+                        <p id="speech2" class="talk">If you want sound go to options.</p>
+                        <p id="speech3" class="talk">May I ask your name?</p>
                         <p id="speech4" class="talk"></p>
                         <div class="askName">
                             <div class="btn-group flex-container" role="group" aria-label="Basic example">
                                 <div><input type="text" class="form-control name" placeholder="Player Name" id="textName" ></div> 
                                 
                                 <button type="button" class="btn add-player"></button>
-                        
-                              </div>
-                       
-                    </div>
+                               </div>
+                       </div>
                     <p id="speech5" class="talk"></p>
                 </div>
 
 
                 </div>
-                <div class="bottomBar row">
+                <div class="bottomBar row open">
                     <div class="speaker">
                         <img src="./images/c3-po.png" class="host1">
                         <img class="host2" src="./images/smith.png" >
-                        </div>
+                         
+                      </div>
                 </div>
             </div>
        
@@ -117,5 +134,6 @@
       </div>
       
     </div>
+    <audio id="tardisAudio"source src="./sound/tardis.mp3" type="audio/ogg">
 </body>
 </html>
