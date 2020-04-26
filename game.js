@@ -14,35 +14,41 @@ let shuffledQ
 $(".startGame").click(function(){
     $(".open").hide(); $(".Game").css('display','block');
     shuffledQ = questions.sort(() => Math.random() - .5)
-  setTable() 
+countdown()
+    setTable() 
  })
 
  function setTable() {
     showQuestion(shuffledQ[currentQ])
     }
 function showQuestion(question){
-    $('.A').text(question.a)
+    if  (time <= 0 || currentQ >= "10") {
+      clearInterval();    
+       $(".Game").hide();
+       $("#crest").hide();
+       highScoreSet();}
+       else{
+      $('.A').text(question.a)
     $('.B').text(question.b)
     $('.C').text(question.c)
     $('.D').text(question.d)
      $("h6").text(question.question)
-    rightAnswer=question.e
-    timer()
+    rightAnswer=question.e}
+    
+    
 }
- // timer function
 
- var chrono = setInterval(timer, 1000); 
- function timer(){
-  $('p3').text(time);
+
+function countdown(){
+  setInterval(function(){
+     $('p3').text(time);
   $('p4').text(score)
-  if  (time <= 0 || currentQ >= "10") {
-  clearInterval(chrono);    
-   $(".Game").hide();
-   $("#crest").hide();
-   highScoreSet();
- }else{
-   time--;
-  }}
+    time--;
+    },1000);}
+ 
+
+
+
 //  answer Selector function
   $(".answer").click(function() {
     var x = $(this).val();

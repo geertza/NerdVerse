@@ -126,7 +126,7 @@
      
       position: absolute;
       top: 50%;
-      animation: crawl 90s linear  infinite;
+      animation: crawl 120s linear ;
        background-image: url(./images/steel.png);
       background-repeat: no-repeat;
        background-size: cover;
@@ -311,3 +311,45 @@ p3, p4{
         top: -20%;
         color: #e2d9bc;
 }
+
+
+@media only screen and (max-width: 550px) {
+    h3{
+        display: initial;
+        font-size: 3vw;
+    }
+    .bubble{
+        right: -3%;
+        font-size: 2.5vw;
+    }
+    .host1{
+        left: 0%;
+    }
+    .crest{
+        height: 17vh;
+    }
+    .btn-group{
+       
+        margin: 5px;
+    }
+    .startGame{
+        font-size: 3vw;
+    }
+    .host2{
+        left: -30%;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
