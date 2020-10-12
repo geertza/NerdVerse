@@ -1,5 +1,5 @@
 # nerdverse
-
+Tech:   js,css,html
 ![](images/screenshot1.png)
 
 Basic trivia game about popular science fiction tv shows and movies. Starts out with a dialogue introduction then ask questions with four answer. You start out with 90 seconds and if get a question wrong you lose 10 seconds. If you get it right you get 1 point. After ten questions or time runs out, game end and high score list is displayed. 
@@ -7,22 +7,29 @@ Basic trivia game about popular science fiction tv shows and movies. Starts out 
 ### [Launch nerdverse >](https://geertza.github.io/NerdVerse/)
 
 
-### Background
-Just a little distraction in life for those who enjoy sci-fi pop culture.
 
-### Features
-Cheap b rated effects and dialogue, plus some interesting trivial facts.
 
 ### Tech
 
-
-- [JQuery, maybe](https://jquery.com/)
-- CSS Framework(bootstrap)(animation)(web-kit)
+- Javascript
+- Jquery
+- CSS Framework(bootstrap)
 -gimp(for image editing) 
 
 
-### Roadmap 
-Many more questions, different level with  user accounts and different genres of "nerd" culture. Distracting side bar activies like host comments and hints, enemy icons with healthbars, and boss fights. Extra rounds with different games, ex. "javascript algorithm to defeat the borg" 
+### File Structure
+Basic JS,html,style and resources(images,sound,fonts)
+### Functional principles demonstrated
+- dynamically updated HTML and CSS powered by your JavaScript code
+- timing functions
+- css animation
+- responsive design
+
+### Installation
+1) download
+2) open Index.html
+
+
 
 ### Resources
 space background provided by,
